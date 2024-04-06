@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home page{% endblock title %}
+
+{% block content %}
+    {% include 'components/header.html' %}
+    <section class="">
+	<div class="back-img d-flex min-vh-60 py-5 py-lg-7" lc-helper="background">
+		<div class="align-self-center text-light col-md-8 offset-md-2 text-center text-md-start">
+			<div class="lc-block mb-4">
+				<div editable="rich">
+					<p class="fw-bold text-warning h4">ООО "Кафедра цифрового овощеводства"</p>
+				</div>
+			</div>
+			<div class="lc-block mb-4 mb-lg-6 col-xxl-8">
+				<div editable="rich">
+					<h1 class="display-1 text-white fw-bold">Большие данные в овощеводстве защищенного грунта: будущее уже наступило!</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+    </section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 text-center text-black border" style="padding:60px">
+				<div class="lc-block">
+					<div editable="rich">
+						<p class="display-4">2K</p>
+					</div>
+				</div>
+				<div class="lc-block pb-1">
+					<hr class="w-25 bg-light">
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+						<p>Projects completed</p>
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+			<div class="col-lg-3 col-md-6 text-center text-body" style="padding:60px">
+				<div class="lc-block ">
+					<div editable="rich">
+						<p class="display-4">21.400</p>
+					</div>
+				</div>
+				<div class="lc-block pb-1">
+					<hr class="w-25 bg-light">
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+						<p>Hours of maintenance&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center text-body border" style="padding:60px">
+				<div class="lc-block ">
+					<div editable="rich">
+						<p class="display-4">+23</p>
+					</div>
+				</div>
+				<div class="lc-block pb-1">
+					<hr class="w-25 bg-light">
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+						<p>Years of experience&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 text-center text-black-50" style="padding:60px">
+				<div class="lc-block ">
+					<div editable="rich">
+						<p class="display-4">+12</p>
+					</div>
+				</div>
+				<div class="lc-block pb-1">
+					<hr class="w-25 bg-light">
+				</div>
+				<div class="lc-block">
+					<div editable="rich">
+						<p>Amazing employees&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container mb-3 mt-3">
+		<div class="row">
+			<div class="col-md-6 order-md-1">
+				<div class="lc-block mb-3 mb-md-0">
+					<img src="" alt="some pic">
+				</div><!-- /lc-block -->
+			</div><!-- /col -->
+			<div class="col-md-6 align-self-center mb-5 mb-lg-0 py-4 py-lg-0">
+
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h1 class="display-4 fw-bold">We strive for excellence in everything we do</h1>
+					</div>
+				</div>
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<p>Pharetra sit pellentesque pellentesque pharetra viverra tempus quisque.&nbsp;</p>
+					</div>
+				</div><!-- /lc-block -->
+			</div><!-- /col -->
+			
+		</div>
+		<div class="row">
+			<div class="lc-block text-center mb-3">
+				<a class="btn btn-lg btn-warning" href="{% url 'analytic' %}" role="button">Начать анализ</a>
+			</div><!-- /lc-block -->
+		</div>
+	</div>
+</section>
+    {% include 'components/footer.html' %}
+{% endblock content %}
